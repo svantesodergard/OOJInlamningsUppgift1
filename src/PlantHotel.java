@@ -12,6 +12,7 @@ public class PlantHotel {
     public void addPlant(Plant plant) {
         this.plantsInHotel.add(plant);
     }
+
     public Plant getPlant(String nameOfPlantToFind) throws IllegalArgumentException {
         for (Plant plant : plantsInHotel) {
             if (plant.getName().equalsIgnoreCase(nameOfPlantToFind)) {

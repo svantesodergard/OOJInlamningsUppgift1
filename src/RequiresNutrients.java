@@ -1,3 +1,5 @@
 public interface RequiresNutrients {
-    String calculateRequiredNutrients();
+    double calculateRequiredNutrients();
+    String requiredNutrientsString();
+    void setRequiredNutrient(NutrientValues nutrientValues);
 }

@@ -15,7 +15,7 @@ public class Main {
                 break;
             }
             try {
-                String output = nameOfPlant + " behöver " + plantHotel.getPlant(nameOfPlant).calculateRequiredNutrients();
+                String output = plantHotel.getPlant(nameOfPlant).requiredNutrientsString();
                 JOptionPane.showMessageDialog(null, output);
             } catch (IllegalArgumentException exception) {
                 JOptionPane.showMessageDialog(null, exception.getMessage());
