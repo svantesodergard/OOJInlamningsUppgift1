@@ -1,4 +1,5 @@
 abstract class Plant implements RequiresNutrients {
+    //Inkapsling
     private String name;
     private double heightInMeters;
     private NutrientValues requiredNutrient;
@@ -9,13 +10,11 @@ abstract class Plant implements RequiresNutrients {
         this.heightInMeters = heightInMeters;
     }
 
+    //Inkapsling
     public void setRequiredNutrient(NutrientValues requiredNutrient) {
         this.requiredNutrient = requiredNutrient;
     }
 
-    public double getHeightInMeters() {
-        return heightInMeters;
-    }
     @Override
     public double calculateRequiredNutrients() {
        return requiredNutrient.baseVolume + requiredNutrient.volumeVariableByHeight * this.heightInMeters;
